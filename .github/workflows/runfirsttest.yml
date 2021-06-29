@@ -22,4 +22,4 @@ jobs:
         java-version: '11'
         distribution: 'adopt'
     - name: Build with Maven
-      run: mvn test -DTest=SeleniumCodingChallangeDay2 -B package --file pom.xml
+      run: mvn clean test -B package --file pom.xml

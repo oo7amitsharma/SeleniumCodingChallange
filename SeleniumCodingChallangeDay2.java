@@ -21,7 +21,7 @@ public class SeleniumCodingChallangeDay2 {
 	static WebElement searchText;
 	static WebElement nextArrowButton;
 	static WebElement getItemList;
-	public static void main(String[] args) throws InterruptedException {
+	public void SeleniumCoding() throws InterruptedException {
 		// TODO Auto-generated method stub
 		String[] carouselList = {"Recommended For You", "Save big on mobiles & tablets", "Top picks in electronics", "Top picks in laptops", "Limited time offers"};
 		WebDriverManager.chromedriver().setup();

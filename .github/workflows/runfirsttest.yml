@@ -26,8 +26,10 @@ jobs:
     
     - uses: actions/upload-artifact@v2
       with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
         name: my-artifact
         path: test-output/
+        publish_dir: ./public
       
 
        

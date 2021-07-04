@@ -26,5 +26,7 @@ jobs:
       
     - name: Deploye report page with github page
       with: 
-       publish_dir: ./test-output
+        publish_dir: ./test-output
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
        

@@ -23,10 +23,5 @@ jobs:
         distribution: 'adopt'
     - name: Build with Maven
       run: mvn clean test -B package --file pom.xml
-      
-    - name: Deploye report page with github page
-      with: 
-        publish_dir: ./test-output
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
        

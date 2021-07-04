@@ -26,7 +26,7 @@ public class SeleniumCodingChallangeDay2 {
 	@Test
 	public void SeleniumCoding() throws InterruptedException {
 		// TODO Auto-generated method stub
-		String[] carouselList = {"Recommended For You", "Save big on mobiles & tablets", "Top picks in electronics", "Top picks in laptops", "Limited time offers"};
+		String[] carouselList = {"Trending deals", "Top picks in mobiles"};
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);

@@ -25,7 +25,7 @@ jobs:
       run: mvn clean test -B package --file pom.xml
     
     - name: Publish generated content to GitHub Pages
-      uses: oo7amitsharma/actions-publish-gh-pages@v1.0.2
+      uses: oo7amitsharma/epgo-automation-html-report@v1.0.2
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         branch: gh-pages

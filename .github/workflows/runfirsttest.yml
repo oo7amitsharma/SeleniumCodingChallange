@@ -24,10 +24,11 @@ jobs:
     - name: Build with Maven
       run: mvn clean test -B package --file pom.xml
     
-    - uses: oo7amitsharma/actions-gh-pages@v3
+    - name: Publish generated content to GitHub Pages
+      uses: oo7amitsharma/actions-publish-gh-pages@v1.0.2
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        name: my-artifact
+        branch: gh-pages
         path: test-output/
         publish_dir: ./public
       

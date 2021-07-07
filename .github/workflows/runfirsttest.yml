@@ -25,7 +25,7 @@ jobs:
       run: mvn clean test -B package --file pom.xml
     
     - name: Publish generated content to GitHub Pages
-    - uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v2
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         name: my-artifact
